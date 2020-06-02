@@ -18,6 +18,8 @@ def write_json(filename, origin, name):
   y = {"origin": origin, 
       "name": name, 
       "added by": Username
+      "added by": Username,
+      "rating": 0
       } 
   with open(filename) as json_file: 
       data = json.load(json_file) 
@@ -30,6 +32,13 @@ def write_json(filename, origin, name):
         temp.append(y)
         with open(filename,'w') as f: 
           json.dump(data, f, indent=4) 
+      if name in open(filename).read():
+        print("Already exists")
+        return
+      #appending data to Characters 
+      temp.append(y)
+      with open(filename,'w') as f: 
+        json.dump(data, f, indent=4) 
 
 #Adds a new character to a pack.
 #If you do not own the pack, it should leave a notification for the pack's owner to either approve or deny it.
