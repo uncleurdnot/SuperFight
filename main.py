@@ -68,7 +68,7 @@ def rem_pack(origin, cat):
     
 #Import Seclected Packs
 def import_packs():
-  temp = 0
+  temp = ""
   for filename in lib:
     with open(filename) as json_file: 
       data = json.load(json_file) 
