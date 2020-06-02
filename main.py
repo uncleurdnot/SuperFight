@@ -12,7 +12,8 @@ def list_packs():
   l = []
   for root, dirs, files in os.walk("./Data"):
     for name in files:
-      l.append(name)
+      if name != "users.JSON":
+        l.append(name)
   return l
  
 def get_fname(origin):
@@ -80,52 +81,62 @@ def rem_pack(origin, ec):
 def zipq(list):
   l1 = []
   l2 = []
+  i = 0
   for x in list:
-    if x%2 == 0:
-      l1.append(list[x])
-    elif x%2 == 1:
-      l2.append(list[x])
-  return zip(l1, l2)
+    if int(i)%2 == 0:
+      l1.append(list[i])
+    elif int(i)%2 == 1:
+      l2.append(list[i])
+    i += 1
+  return [[a, b] for a in l1 for b in l2]
 
 #Import Seclected Packs
 def import_packs():
   flib = zipq(lib)
-  temp = ""
+  print(flib)
+  temp = [[],[],[],[]]
   for filename, excl in flib:
     with open(filename) as json_file: 
       data = json.load(json_file)
-      if excl[0] == 1: 
-        temp += data['Characters']
-      if excl[1] == 1:
-        temp += data['Powers']
-      if excl[2] == 1:
-        temp += data['WinConds']
-      if excl[3] == 1:
-        temp += data['Arenas'] 
+      print(excl[0] + ""+ excl[1]   + "" + excl[2] + "" + excl[3])
+      if excl[0] == "1":
+        temp[0].append(data['characters'])
+      if excl[1] == "1":
+        temp[1].append(data['powers'])
+      if excl[2] == "1":
+        temp[2].append(data['winconds'])
+      if excl[3] == "1":
+        temp[3].append(data['arenas'])
   return temp
 
 def select_packs():
   while True:
-    print("Add, Remove, Finish?")
+    print(lib)
+    print("Add, Remove, Show, Finish?")
     choice = input().lower()
     if choice == "add":
       print("Enter Pack Name")
       o = input()
       #Exclusion codes are hex values that will later be converted to binary
       print("Enter exclusion code")
-      ec = format(bin(int(input(), 16)), '04b')
+      ec = int(input(), 16)
+      ec = '{:04b}'.format(ec)
       add_pack(o,ec)
     elif choice == "remove":
       print("Enter Pack Name")
       o = input()
       #Exclusion codes are hex values that will later be converted to binary
       print("Enter exclusion code")
-      ec = format(bin(int(input(), 16)), '04b')
+      ec = int(input(), 16)
+      ec = '{:04b}'.format(ec)
       rem_pack(o,ec)
-    elif choice == "Finish":
+    elif choice == "show":
+      print(list_packs())
+    elif choice == "finish":
       break
     else:
       print("Invalid Entry")
-    import_packs
+  return import_packs()
 
 
+print(select_packs())
