@@ -1,4 +1,389 @@
 {
+<<<<<<< HEAD
+	"characters": [
+		{
+			"origin":"bleach",
+			"name":"ichigo kurosaki",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"orihime inoue",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"renji abarai",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"rukia kuchiki",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"uryū ishida",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"yasutora \"chad\" sado",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"hollows",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"sōsuke aizen",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"bounts",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"xcution",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"wandenreich",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"yhwach",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"jugram haschwalth",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"pernida parnkgjas",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"askin nakk le vaar",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"bambietta basterbine",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"äs nödt",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"liltotto lamperd",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"bazz-b",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"cang du",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"quilge opie",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"bg9",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"pepe waccabrada",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"gerard valkyrie",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"robert accutrone",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"driscoll berci",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"meninas mcallon",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"berenice gabrielli",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"jerome guizbatt",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"mask de masculine",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"candice catnipp",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"nanana najahkoop",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"gremmy thoumeaux",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"nianzol weizol",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"lille barro",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"lloyd brothers",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"giselle gewelle",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"shaz domino",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"kisuke urahara",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"yoruichi shihōin",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"tessai tsukabishi",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"jinta hanakari",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"ururu tsumugiya",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"shinji hirako",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"hiyori sarugaki",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"love aikawa",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"kensei muguruma",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"mashiro kuna",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"rōjūrō \"rose\" otoribashi",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"hachigen \"hachi\" ushōda",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"lisa yadōmaru",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"kon",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"kurōdo",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"noba",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"lirin",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"nozomi kujō",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"kūkaku shiba",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"ganju shiba",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"ryūken ishida",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"sōken ishida",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"kanae katagiri",
+			"added by":"uncleurdnot",
+			"rating": 0
+		},
+		{
+			"origin":"bleach",
+			"name":"zangetsu",
+			"added by":"uncleurdnot",
+			"rating": 0
+		}
+	],
+  "Powers":[
+
+  ],
+  "WinCond":[
+
+  ],
+  "Arenas": [
+    
+  ]
+=======
 	"Characters": [
 		{
 			"origin":"Bleach",
@@ -374,4 +759,5 @@
 			"rating": 0
 		}
 	]
+>>>>>>> origin/master
 }

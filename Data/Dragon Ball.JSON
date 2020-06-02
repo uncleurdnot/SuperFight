@@ -414,6 +414,18 @@
 			"added by":"uncleurdnot",
 			"rating": 0
 		}
+<<<<<<< HEAD
+	],
+  "Powers":[
+
+  ],
+  "WinCond":[
+
+  ],
+  "Arenas": [
+    
+  ]
+=======
 	]
     "characters": [
         {
@@ -849,4 +861,5 @@
             "rating": 0
         }
     ]
+>>>>>>> origin/master
 }
