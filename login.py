@@ -11,6 +11,7 @@ def pwhasher(i):
   return pw.hexdigest()
 
 def create_user(u, pw, email): 
+  u = u.lower()
   email = email.lower()
   filename = 'Data/sys/users.JSON'
   if "\"username\": \"" + u + "\"," in open(filename).read():

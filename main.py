@@ -3,7 +3,7 @@ import login
 import json
 
 #Delete this later, Need to set up usernames
-Username = "UncleUrdnot"
+Username = "uncleurdnot"
 lib = []
 
 #Grab packs from /Data
@@ -21,6 +21,8 @@ def get_fname(origin):
 
 # Adds a new object to a pack.
 def write_json(origin, name, cat): 
+  name = name.lower()
+  origin = origin.lower()
   filename = get_fname(cat, origin)
   # python object to be appended 
   y = {"origin": origin, 
@@ -31,7 +33,7 @@ def write_json(origin, name, cat):
   with open(filename) as json_file: 
     data = json.load(json_file)
     temp = data[cat]
-    #Check to see if the character has already been added before
+    #Check to see if the Object has already been added before
     if "\"name\":\"" + name + "\"," in open(filename).read():
       print("Already exists")
       return
@@ -56,27 +58,51 @@ def rate(origin, name, cat, v):
           json.dump(data, f, indent=4)
 
 #Add Pack to Selection
-def add_pack(origin, cat):
-  filename = get_fname(cat, origin)
+def add_pack(origin, ec):
+  filename = get_fname(origin)
   if filename not in lib:
     lib.append(filename)
+    lib.append(ec)
 
 #Remove Pack from selection
-def rem_pack(origin, cat):
-  filename = get_fname(cat, origin)
+def rem_pack(origin, ec):
+  filename = get_fname(origin)
   if filename in lib:
+    lib.remove(lib.index(filename)+1)
     lib.remove(filename)
     
 #Import Seclected Packs
 def import_packs():
   temp = ""
-  for filename in lib:
+  for filename, excl in lib:
     with open(filename) as json_file: 
       data = json.load(json_file) 
       temp += data['Characters']
       temp += data['Powers']
       temp += data['WinCons']
-      temp += data['Arenas']
+      temp += data['Arenas'] 
       return temp
 
-
+def select_packs():
+  print("Enter Pack Name")
+  o = input()
+  #Exclusion codes are hex values that will later be converted to binary
+  # Type: C P W A
+  # 0   : 0 0 0 0 (none)
+  # 1   : 0 0 0 1
+  # 2   : 0 0 1 0
+  # 3   : 0 0 1 1
+  # 4   : 0 1 0 0
+  # 5   : 0 1 0 1
+  # 6   : 0 1 1 0
+  # 7   : 0 1 1 1
+  # 8   : 1 0 0 0
+  # 9   : 1 0 0 1
+  # 10  : 1 0 1 0
+  # 11  : 1 0 1 1
+  # 12  : 1 1 0 0
+  # 13  : 1 1 0 1
+  # 14  : 1 1 1 0
+  # 15  : 1 1 1 1
+  print("Enter exclusion code")
+  ec = bin(int(input(), 16))
