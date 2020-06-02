@@ -1,75 +1,442 @@
-[
-	{"origin": "Naruto", "name": "Naruto Uzumaki"},
-	{"origin": "Naruto", "name": "Sasuke Uchiha"},
-	{"origin": "Naruto", "name": "Sakura Haruno"},
-	{"origin": "Naruto", "name": "Kakashi Hatake"},
-	{"origin": "Naruto", "name": "Boruto Uzumaki"},
-	{"origin": "Naruto", "name": "Sarada Uchiha"},
-	{"origin": "Naruto", "name": "Mitsuki"},
-	{"origin": "Naruto", "name": "Konohamaru Sarutobi"},
-	{"origin": "Naruto", "name": "Hinata Hyuga"},
-	{"origin": "Naruto", "name": "Kiba Inuzuka"},
-	{"origin": "Naruto", "name": "Shikamaru Nara"},
-	{"origin": "Naruto", "name": "Choji Akimichi"},
-	{"origin": "Naruto", "name": "Ino Yamanaka"},
-	{"origin": "Naruto", "name": "Asuma Sarutobi"},
-	{"origin": "Naruto", "name": "Rock Lee"},
-	{"origin": "Naruto", "name": "Neji Hyuga"},
-	{"origin": "Naruto", "name": "Tenten"},
-	{"origin": "Naruto", "name": "Might Guy"},
-	{"origin": "Naruto", "name": "Gaara"},
-	{"origin": "Naruto", "name": "Kankuro"},
-	{"origin": "Naruto", "name": "Temari"},
-	{"origin": "Naruto", "name": "Shikadai Nara"},
-	{"origin": "Naruto", "name": "Chocho Akimichi"},
-	{"origin": "Naruto", "name": "Inojin Yamanaka"},
-	{"origin": "Naruto", "name": "Moegi Kazamatsuri"},
-	{"origin": "Naruto", "name": "Metal Lee"},
-	{"origin": "Naruto", "name": "Iwabi Yuino"},
-	{"origin": "Naruto", "name": "Denki Kaminarimon"},
-	{"origin": "Naruto", "name": "Udon Ise"},
-	{"origin": "Naruto", "name": "Zabuza Momochi"},
-	{"origin": "Naruto", "name": "Haku"},
-	{"origin": "Naruto", "name": "Orochimaru"},
-	{"origin": "Naruto", "name": "Kabuto Yakushi"},
-	{"origin": "Naruto", "name": "Tayuya"},
-	{"origin": "Naruto", "name": "Sakon"},
-	{"origin": "Naruto", "name": "Kidomaru"},
-	{"origin": "Naruto", "name": "Kimmimaro"},
-	{"origin": "Naruto", "name": "Jirobo"},
-	{"origin": "Naruto", "name": "Obito Uchiha"},
-	{"origin": "Naruto", "name": "Zetsu"},
-	{"origin": "Naruto", "name": "Kisame Hoshigaki"},
-	{"origin": "Naruto", "name": "Konan"},
-	{"origin": "Naruto", "name": "Nagato"},
-	{"origin": "Naruto", "name": "Itachi Uchiha"},
-	{"origin": "Naruto", "name": "Deidara"},
-	{"origin": "Naruto", "name": "Hidan"},
-	{"origin": "Naruto", "name": "Kakuzu"},
-	{"origin": "Naruto", "name": "Sasori"},
-	{"origin": "Naruto", "name": "Kaguya Ōtsutsuki"},
-	{"origin": "Naruto", "name": "Toneri Ōtsutsuki"},
-	{"origin": "Naruto", "name": "Momoshiki Ōtsutsuki"},
-	{"origin": "Naruto", "name": "Kinshiki Ōtsutsuki"},
-	{"origin": "Naruto", "name": "Iruka Umino"},
-	{"origin": "Naruto", "name": "Hashirama Senju"},
-	{"origin": "Naruto", "name": "Tobirama Senju"},
-	{"origin": "Naruto", "name": "Hiruzen Sarutobi"},
-	{"origin": "Naruto", "name": "Minato Namikaze"},
-	{"origin": "Naruto", "name": "Tsunade"},
-	{"origin": "Naruto", "name": "Sunagakure"},
-	{"origin": "Naruto", "name": "Chiyo"},
-	{"origin": "Naruto", "name": "A"},
-	{"origin": "Naruto", "name": "Darui"},
-	{"origin": "Naruto", "name": "Karui"},
-	{"origin": "Naruto", "name": "Mei Terumi"},
-	{"origin": "Naruto", "name": "Chojuro"},
-	{"origin": "Naruto", "name": "Ao"},
-	{"origin": "Naruto", "name": "Gengetsu Hozuki"},
-	{"origin": "Naruto", "name": "Onoki"},
-	{"origin": "Naruto", "name": "Kurotsuchi"},
-	{"origin": "Naruto", "name": "Akatsuchi"},
-	{"origin": "Naruto", "name": "Suigetsu Hozuki"},
-	{"origin": "Naruto", "name": "Karin"},
-	{"origin": "Naruto", "name": "Jugo"},
-]
+{
+	"Characters": [
+		{
+			"origin":"Naruto",
+			"name":"Naruto Uzumaki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Sasuke Uchiha",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Sakura Haruno",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kakashi Hatake",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Boruto Uzumaki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Sarada Uchiha",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Mitsuki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Konohamaru Sarutobi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Hinata Hyuga",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kiba Inuzuka",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Shikamaru Nara",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Choji Akimichi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Ino Yamanaka",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Asuma Sarutobi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Rock Lee",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Neji Hyuga",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Tenten",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Might Guy",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Gaara",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kankuro",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Temari",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Shikadai Nara",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Chocho Akimichi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Inojin Yamanaka",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Moegi Kazamatsuri",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Metal Lee",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Iwabi Yuino",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Denki Kaminarimon",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Udon Ise",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Zabuza Momochi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Haku",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Orochimaru",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kabuto Yakushi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Tayuya",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Sakon",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kidomaru",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kimmimaro",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Jirobo",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Obito Uchiha",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Zetsu",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kisame Hoshigaki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Konan",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Nagato",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Itachi Uchiha",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Deidara",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Hidan",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kakuzu",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Sasori",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kaguya Ōtsutsuki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Toneri Ōtsutsuki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Momoshiki Ōtsutsuki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kinshiki Ōtsutsuki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Iruka Umino",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Hashirama Senju",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Tobirama Senju",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Hiruzen Sarutobi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Minato Namikaze",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Tsunade",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Sunagakure",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Chiyo",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"A",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Darui",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Karui",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Mei Terumi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Chojuro",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Ao",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Gengetsu Hozuki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Onoki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kurotsuchi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Akatsuchi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Suigetsu Hozuki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Karin",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Jugo",
+			"added by":"UncleUrdnot"
+			"rating": 0
+		}
+	]
+}
