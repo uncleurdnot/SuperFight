@@ -1,6 +1,7 @@
 import os
 import login
 import json
+import shutil
 
 #Delete this later, Need to set up usernames
 Username = "uncleurdnot"
@@ -17,8 +18,15 @@ def list_packs():
   return l
  
 def get_fname(origin):
-  filename = "Data/"+ origin + ".JSON"
+  filename = "Data/"+ origin.lower() + ".JSON"
   return filename
+
+#Creates a new pack
+def creat_pack(origin):
+  source = "./Data/sys/users.JSON"
+  filename = get_fname(origin)
+  shutil.copyfile(source, filename)
+
 
 # Adds a new object to a pack.
 def write_json(origin, name, cat): 
@@ -83,22 +91,21 @@ def zipq(list):
   l2 = []
   i = 0
   for x in list:
-    if int(i)%2 == 0:
-      l1.append(list[i])
-    elif int(i)%2 == 1:
-      l2.append(list[i])
-    i += 1
-  return [[a, b] for a in l1 for b in l2]
+    if i%2 == 0:
+      l1.append(x)
+    if i%2 == 1:
+     l2.append(x)
+    i += 1    
+  return zip(l1, l2)
 
 #Import Seclected Packs
 def import_packs():
   flib = zipq(lib)
-  print(flib)
+  #print(flib)
   temp = [[],[],[],[]]
   for filename, excl in flib:
     with open(filename) as json_file: 
       data = json.load(json_file)
-      print(excl[0] + ""+ excl[1]   + "" + excl[2] + "" + excl[3])
       if excl[0] == "1":
         temp[0].append(data['characters'])
       if excl[1] == "1":
@@ -139,4 +146,4 @@ def select_packs():
   return import_packs()
 
 
-print(select_packs())
+deck = select_packs()
