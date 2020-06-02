@@ -1,4 +1,5 @@
 import os
+import login
 import json
 
 #Delete this later, Need to set up usernames
@@ -31,7 +32,7 @@ def write_json(origin, name, cat):
     data = json.load(json_file)
     temp = data[cat]
     #Check to see if the character has already been added before
-    if name in open(filename).read():
+    if "\"name\":\"" + name + "\"," in open(filename).read():
       print("Already exists")
       return
     #appending data to Characters 
@@ -45,7 +46,7 @@ def rate(origin, name, cat, v):
   with open(filename) as json_file: 
     data = json.load(json_file) 
     temp = data[cat]
-    if name not in open(filename).read():
+    if "\"name\":\"" + name + "\"," not in open(filename).read():
       print("Object Does not exist")
     for x in temp:
       if x['name'] == name:
@@ -76,5 +77,6 @@ def import_packs():
       temp += data['Powers']
       temp += data['WinCons']
       temp += data['Arenas']
+      return temp
 
 
