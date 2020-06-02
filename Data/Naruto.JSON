@@ -1,701 +1,701 @@
 {
-	"Characters": [
+	"characters": [
 		{
-			"origin":"Naruto",
-			"name":"Naruto Uzumaki",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"naruto uzumaki",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Sasuke Uchiha",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"sasuke uchiha",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Sakura Haruno",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"sakura haruno",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Kakashi Hatake",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"kakashi hatake",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Boruto Uzumaki",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"boruto uzumaki",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Sarada Uchiha",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"sarada uchiha",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Mitsuki",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"mitsuki",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Konohamaru Sarutobi",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"konohamaru sarutobi",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Hinata Hyuga",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"hinata hyuga",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Kiba Inuzuka",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"kiba inuzuka",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Shikamaru Nara",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"shikamaru nara",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Choji Akimichi",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"choji akimichi",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Ino Yamanaka",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"ino yamanaka",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Asuma Sarutobi",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"asuma sarutobi",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Rock Lee",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"rock lee",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Neji Hyuga",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"neji hyuga",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Tenten",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"tenten",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Might Guy",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"might guy",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Gaara",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"gaara",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Kankuro",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"kankuro",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Temari",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"temari",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Shikadai Nara",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"shikadai nara",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Chocho Akimichi",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"chocho akimichi",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Inojin Yamanaka",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"inojin yamanaka",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Moegi Kazamatsuri",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"moegi kazamatsuri",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Metal Lee",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"metal lee",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Iwabi Yuino",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"iwabi yuino",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Denki Kaminarimon",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"denki kaminarimon",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Udon Ise",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"udon ise",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Zabuza Momochi",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"zabuza momochi",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Haku",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"haku",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Orochimaru",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"orochimaru",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Kabuto Yakushi",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"kabuto yakushi",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Tayuya",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"tayuya",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Sakon",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"sakon",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Kidomaru",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"kidomaru",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Kimmimaro",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"kimmimaro",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Jirobo",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"jirobo",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Obito Uchiha",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"obito uchiha",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Zetsu",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"zetsu",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Kisame Hoshigaki",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"kisame hoshigaki",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Konan",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"konan",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Nagato",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"nagato",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Itachi Uchiha",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"itachi uchiha",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Deidara",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"deidara",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Hidan",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"hidan",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Kakuzu",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"kakuzu",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Sasori",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"sasori",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Kaguya Ōtsutsuki",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"kaguya ōtsutsuki",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Toneri Ōtsutsuki",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"toneri ōtsutsuki",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Momoshiki Ōtsutsuki",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"momoshiki ōtsutsuki",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Kinshiki Ōtsutsuki",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"kinshiki ōtsutsuki",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Iruka Umino",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"iruka umino",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Hashirama Senju",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"hashirama senju",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Tobirama Senju",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"tobirama senju",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Hiruzen Sarutobi",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"hiruzen sarutobi",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Minato Namikaze",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"minato namikaze",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Tsunade",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"tsunade",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Sunagakure",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"sunagakure",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Chiyo",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"chiyo",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"A",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"a",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Darui",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"darui",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Karui",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"karui",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Mei Terumi",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"mei terumi",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Chojuro",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"chojuro",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Ao",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"ao",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Gengetsu Hozuki",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"gengetsu hozuki",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Onoki",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"onoki",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Kurotsuchi",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"kurotsuchi",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Akatsuchi",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"akatsuchi",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Suigetsu Hozuki",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"suigetsu hozuki",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Karin",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"karin",
+			"added by":"uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin":"Naruto",
-			"name":"Jugo",
-			"added by":"UncleUrdnot",
+			"origin":"naruto",
+			"name":"jugo",
+			"added by":"uncleurdnot",
 			"rating": 0
 		}
 	],
-	"Powers": [
+	"powers": [
 		{
-			"origin": "Naruto",
-			"name": "One-Tails Chakra",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "one-tails chakra",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Two-Tails Chakra",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "two-tails chakra",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Three-Tails Chakra",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "three-tails chakra",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Four-Tails Chakra",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "four-tails chakra",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Five-Tails Chakra",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "five-tails chakra",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Six-Tails Chakra",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "six-tails chakra",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Seven-Tails Chakra",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "seven-tails chakra",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Eight-Tails Chakra",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "eight-tails chakra",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Nine-Tails Chakra",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "nine-tails chakra",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "The Sharringan",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "the sharringan",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Amaterasu",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "amaterasu",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Inton: Kagutsuchi",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "inton: kagutsuchi",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Tsukuyomi",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "tsukuyomi",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Amaterasu",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "amaterasu",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Kamui",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "kamui",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Limbo Clones",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "limbo clones",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Shadow Clones",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "shadow clones",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Sexy Jutsu",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "sexy jutsu",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Kotoamatsukami",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "kotoamatsukami",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Summoned Toad",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "summoned toad",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Summoned Slug",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "summoned slug",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Summoned Snake",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "summoned snake",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Summoned Dogs",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "summoned dogs",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "The Rinnegan",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "the rinnegan",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "The Byakugan",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "the byakugan",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "8 inner Gates",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "8 inner gates",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Mitotic Regeneration",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "mitotic regeneration",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Byakugou Seal",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "byakugou seal",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Rasengan",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "rasengan",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Rasenshuriken",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "rasenshuriken",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Chidori",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "chidori",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Kirin",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "kirin",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Hashirama Cells",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "hashirama cells",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Flying Raijin",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "flying raijin",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Sage Mode",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "sage mode",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Curse Mark Stage 1",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "curse mark stage 1",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Curse Mark Stage 2",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "curse mark stage 2",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Susanoo",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "susanoo",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Wood Style",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "wood style",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Six-Paths Sage Mode",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "six-paths sage mode",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Shadow Possession Jutsu",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "shadow possession jutsu",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Mind Transfer Jutsu",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "mind transfer jutsu",
+			"added by": "uncleurdnot",
 			"rating": 0
 		},
 		{
-			"origin": "Naruto",
-			"name": "Ninja Puppets",
-			"added by": "UncleUrdnot",
+			"origin": "naruto",
+			"name": "ninja puppets",
+			"added by": "uncleurdnot",
 			"rating": 0
 		}
 	]
