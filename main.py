@@ -60,9 +60,13 @@ def rate(origin, name, cat, v):
 #Add Pack to Selection
 def add_pack(origin, ec):
   filename = get_fname(origin)
+  #If the desired pack is not already in lib, add it
   if filename not in lib:
     lib.append(filename)
     lib.append(ec)
+  #If the desired pack is already availible, simply update the ec
+  else:
+    lib[lib.index(filename)+1] = ec
 
 #Remove Pack from selection
 def rem_pack(origin, ec):
@@ -70,11 +74,24 @@ def rem_pack(origin, ec):
   if filename in lib:
     lib.remove(lib.index(filename)+1)
     lib.remove(filename)
-    
+
+#Normally, lib is a series of {origin, ec} values.
+#zipq() creates a single list of zipped tuples from the original list
+def zipq(list):
+  l1 = []
+  l2 = []
+  for x in list:
+    if x%2 == 0:
+      l1.append(list[x])
+    elif x%2 == 1:
+      l2.append(list[x])
+  return zip(l1, l2)
+
 #Import Seclected Packs
 def import_packs():
+  flib = zipq(lib)
   temp = ""
-  for filename, excl in lib:
+  for filename, excl in flib:
     with open(filename) as json_file: 
       data = json.load(json_file) 
       temp += data['Characters']
@@ -84,25 +101,27 @@ def import_packs():
       return temp
 
 def select_packs():
-  print("Enter Pack Name")
-  o = input()
-  #Exclusion codes are hex values that will later be converted to binary
-  # Type: C P W A
-  # 0   : 0 0 0 0 (none)
-  # 1   : 0 0 0 1
-  # 2   : 0 0 1 0
-  # 3   : 0 0 1 1
-  # 4   : 0 1 0 0
-  # 5   : 0 1 0 1
-  # 6   : 0 1 1 0
-  # 7   : 0 1 1 1
-  # 8   : 1 0 0 0
-  # 9   : 1 0 0 1
-  # 10  : 1 0 1 0
-  # 11  : 1 0 1 1
-  # 12  : 1 1 0 0
-  # 13  : 1 1 0 1
-  # 14  : 1 1 1 0
-  # 15  : 1 1 1 1
-  print("Enter exclusion code")
-  ec = bin(int(input(), 16))
+  while True:
+    print("Add, Remove, Finish?")
+    choice = input().lower()
+    if choice == "add":
+      print("Enter Pack Name")
+      o = input()
+      #Exclusion codes are hex values that will later be converted to binary
+      print("Enter exclusion code")
+      ec = format(bin(int(input(), 16)), '04b')
+      add_pack(o,ec)
+    elif choice == "remove":
+      print("Enter Pack Name")
+      o = input()
+      #Exclusion codes are hex values that will later be converted to binary
+      print("Enter exclusion code")
+      ec = format(bin(int(input(), 16)), '04b')
+      rem_pack(o,ec)
+    elif choice == "Finish":
+      break
+    else:
+      print("Invalid Entry")
+    import_packs
+
+
