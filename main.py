@@ -23,8 +23,11 @@ def get_fname(origin):
 
 #Creates a new pack
 def creat_pack(origin):
-  source = "./Data/sys/users.JSON"
+  source = "./Data/sys/template.JSON"
   filename = get_fname(origin)
+  if os.path.exists(filename):
+    print("Already exists")
+    return
   shutil.copyfile(source, filename)
 
 
@@ -145,5 +148,19 @@ def select_packs():
       print("Invalid Entry")
   return import_packs()
 
-
-deck = select_packs()
+while True:
+  print("Menu:\n\t1:\tPlay\n\t2:\tCreate Pack\n\t3:\tSearch Pack\n\t4:\tExit")
+  ch = input().lower()
+  if ch == "play" or ch == "1":
+    deck = select_packs()
+  elif ch == "create pack" or ch == "create" or ch == "2":
+    print("Input pack name:")
+    o = input()
+    creat_pack(o)
+    continue
+  elif ch == "search pack" or ch == "search" or ch == "3":
+    continue
+  elif ch == "Exit" or ch == "4":
+    break
+  else:
+    print("Invalid Input")
