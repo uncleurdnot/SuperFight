@@ -1,106 +1,703 @@
-//=============================================================================
-// SRPG_ImmediateSkill.js
-// バージョン   : 1.00
-// 最終更新日   : 2018/7/1
-// 制作         : 神鏡学斗
-// 配布元       : http://www.lemon-slice.net/
-//-----------------------------------------------------------------------------
-// copyright 2017 - 2018 Lemon slice all rights reserved.
-// Released under the MIT license.
-// http://opensource.org/licenses/mit-license.php
-//=============================================================================
-
-/*:
- * @plugindesc SRPG Initiative Battle Order
- * @author Uncle Urdnot
- *
- * @help This plugin does not provide plugin commands.
- * 
- * WIP
- */
-
-(function() {
-
-//====================================================================
-// ●Game_Temp
-//====================================================================
-    //初期化処理
-    var _SRPG_Game_Temp_initialize = Game_Temp.prototype.initialize;
-    Game_Temp.prototype.initialize = function() {
-    _SRPG_Game_Temp_initialize.call(this);
-    this._ImmediateSkill = false;
-    };
-
-    //ターン非消費スキルかを返す
-    Game_Temp.prototype.SrpgImmediateSkill = function() {
-        return this._ImmediateSkill;
-    };
-
-    //ターン非消費スキルかを設定する
-    Game_Temp.prototype.setSrpgImmediateSkill = function(val) {
-        this._ImmediateSkill = val;
-    };
-
-//====================================================================
-// ●Game_Temp
-//====================================================================
-    // スキル・アイテムが使用可能かの判定
-    var _SRPG_IS_Game_BattlerBase_canUse = Game_BattlerBase.prototype.canUse;
-    Game_BattlerBase.prototype.canUse = function(item) {
-        if (!item) {
-            return false;
-        }
-        if (this.isAutoBattle() && item.meta.ImmediateSkill == 'true') {
-            return false;
-        }
-        return _SRPG_IS_Game_BattlerBase_canUse.call(this, item);
-    };
-
-//====================================================================
-// ●Scene_Map
-//====================================================================
-    //戦闘開始コマンド・戦闘開始
-    var _SRPG_IS_Scene_Map_commandBattleStart = Scene_Map.prototype.commandBattleStart;
-    Scene_Map.prototype.commandBattleStart = function() {
-        var actionArray = $gameSystem.srpgBattleWindowNeedRefresh()[1];
-        var skill = actionArray[1].currentAction().item();
-        if (skill.meta.ImmediateSkill == 'true') {
-            $gameTemp.setSrpgImmediateSkill(true);
-        } else {
-            $gameTemp.setSrpgImmediateSkill(false);
-        }
-        _SRPG_IS_Scene_Map_commandBattleStart.call(this);
-    };
-
-    //行動終了時の処理
-    //戦闘終了の判定はイベントで行う。
-    var _SRPG_IS_Scene_Map_srpgAfterAction = Scene_Map.prototype.srpgAfterAction;
-    Scene_Map.prototype.srpgAfterAction = function() {
-        if ($gameTemp.SrpgImmediateSkill() == true) {
-            $gameTemp.setSrpgImmediateSkill(false);
-            var event = $gameTemp.activeEvent();
-            var battlerArray = $gameSystem.EventToUnit(event.eventId());
-            $gameSystem.setSrpgActorCommandStatusWindowNeedRefresh(battlerArray);
-            $gameSystem.clearSrpgStatusWindowNeedRefresh();
-            $gameSystem.clearSrpgBattleWindowNeedRefresh();
-            $gameTemp.setSrpgDistance(0);
-            $gameTemp.clearTargetEvent();
-            $gameTemp.clearMoveTable();
-            $gameTemp.initialMoveTable($gameTemp.originalPos()[0], $gameTemp.originalPos()[1], battlerArray[1].srpgMove());
-            event.makeMoveTable($gameTemp.originalPos()[0], $gameTemp.originalPos()[1], battlerArray[1].srpgMove(), [0], battlerArray[1].srpgThroughTag());
-            var list = $gameTemp.moveList();
-            for (var i = 0; i < list.length; i++) {
-                var pos = list[i];
-                event.makeRangeTable(pos[0], pos[1], battlerArray[1].srpgWeaponRange(), [0]);
-            }
-            $gameTemp.pushRangeListToMoveList();
-            $gameTemp.setResetMoveList(true);
-            battlerArray[1].srpgMakeNewActions();
-            $gameSystem.setSrpgActorCommandWindowNeedRefresh(battlerArray);
-            $gameSystem.setSubBattlePhase('actor_command_window');
-        } else {
-            _SRPG_IS_Scene_Map_srpgAfterAction.call(this);
-        }
-    };
-
-})();
+{
+	"Characters": [
+		{
+			"origin":"Naruto",
+			"name":"Naruto Uzumaki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Sasuke Uchiha",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Sakura Haruno",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kakashi Hatake",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Boruto Uzumaki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Sarada Uchiha",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Mitsuki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Konohamaru Sarutobi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Hinata Hyuga",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kiba Inuzuka",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Shikamaru Nara",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Choji Akimichi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Ino Yamanaka",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Asuma Sarutobi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Rock Lee",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Neji Hyuga",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Tenten",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Might Guy",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Gaara",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kankuro",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Temari",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Shikadai Nara",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Chocho Akimichi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Inojin Yamanaka",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Moegi Kazamatsuri",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Metal Lee",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Iwabi Yuino",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Denki Kaminarimon",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Udon Ise",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Zabuza Momochi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Haku",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Orochimaru",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kabuto Yakushi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Tayuya",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Sakon",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kidomaru",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kimmimaro",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Jirobo",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Obito Uchiha",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Zetsu",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kisame Hoshigaki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Konan",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Nagato",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Itachi Uchiha",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Deidara",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Hidan",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kakuzu",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Sasori",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kaguya Ōtsutsuki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Toneri Ōtsutsuki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Momoshiki Ōtsutsuki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kinshiki Ōtsutsuki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Iruka Umino",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Hashirama Senju",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Tobirama Senju",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Hiruzen Sarutobi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Minato Namikaze",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Tsunade",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Sunagakure",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Chiyo",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"A",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Darui",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Karui",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Mei Terumi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Chojuro",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Ao",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Gengetsu Hozuki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Onoki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Kurotsuchi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Akatsuchi",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Suigetsu Hozuki",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Karin",
+			"added by":"UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin":"Naruto",
+			"name":"Jugo",
+			"added by":"UncleUrdnot"
+			"added by":"UncleUrdnot",
+			"rating": 0
+		}
+	],
+	"Powers": [
+		{
+			"origin": "Naruto",
+			"name": "One-Tails Chakra"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Two-Tails Chakra"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Three-Tails Chakra"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Four-Tails Chakra"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Five-Tails Chakra"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Six-Tails Chakra"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Seven-Tails Chakra"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Eight-Tails Chakra"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Nine-Tails Chakra"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "The Sharringan"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Amaterasu"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Inton: Kagutsuchi"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Tsukuyomi"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Amaterasu"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Kamui"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Limbo Clones"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Shadow Clones"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Sexy Jutsu"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Kotoamatsukami"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Summoned Toad"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Summoned Slug"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Summoned Snake"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Summoned Dogs"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "The Rinnegan"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "The Byakugan"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "8 inner Gates"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Mitotic Regeneration"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Byakugou Seal"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Rasengan"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Rasenshuriken"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Chidori"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Kirin"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Hashirama Cells"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Flying Raijin"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Sage Mode"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Curse Mark Stage 1"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Curse Mark Stage 2"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Susanoo"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Wood Style"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Six-Paths Sage Mode"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Shadow Possession Jutsu"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Mind Transfer Jutsu"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		},
+		{
+			"origin": "Naruto",
+			"name": "Ninja Puppets"
+			"added by": "UncleUrdnot",
+			"rating": 0
+		}
+	]
+}
