@@ -439,11 +439,7 @@
 			"rating": 0
 		}
 	],
-<<<<<<< HEAD
 	"Powers": [
-=======
-	"powers": [
->>>>>>> origin/master
 		{
 			"origin": "naruto",
 			"name": "one-tails chakra",
@@ -702,15 +698,11 @@
 			"added by": "uncleurdnot",
 			"rating": 0
 		}
-<<<<<<< HEAD
 	],
-  "WinCond":[
+  "WinConds":[
 
   ],
   "Arenas": [
     
   ]
-=======
-	]
->>>>>>> origin/master
 }

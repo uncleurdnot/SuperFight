@@ -93,12 +93,16 @@ def import_packs():
   temp = ""
   for filename, excl in flib:
     with open(filename) as json_file: 
-      data = json.load(json_file) 
-      temp += data['Characters']
-      temp += data['Powers']
-      temp += data['WinCons']
-      temp += data['Arenas'] 
-      return temp
+      data = json.load(json_file)
+      if excl[0] == 1: 
+        temp += data['Characters']
+      if excl[1] == 1:
+        temp += data['Powers']
+      if excl[2] == 1:
+        temp += data['WinConds']
+      if excl[3] == 1:
+        temp += data['Arenas'] 
+  return temp
 
 def select_packs():
   while True:
