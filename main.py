@@ -1,19 +1,27 @@
 import os
+import login
 import json
 
 #Delete this later, Need to set up usernames
 Username = "UncleUrdnot"
+lib = []
 
 #Grab packs from /Data
 #Packs should include a Characters.JSON & a Powers.JSON
 def list_packs():
+  l = []
   for root, dirs, files in os.walk("./Data"):
-    for name in dirs:
-      print(name)
+    for name in files:
+      l.append(name)
+  return l
  
+def get_fname(origin):
+  filename = "Data/"+ origin + ".JSON"
+  return filename
 
-# function to add to JSON 
-def write_json(filename, origin, name): 
+# Adds a new object to a pack.
+def write_json(origin, name, cat): 
+  filename = get_fname(cat, origin)
   # python object to be appended 
   y = {"origin": origin, 
       "name": name, 
@@ -21,25 +29,54 @@ def write_json(filename, origin, name):
       "rating": 0
       } 
   with open(filename) as json_file: 
+    data = json.load(json_file)
+    temp = data[cat]
+    #Check to see if the character has already been added before
+    if "\"name\":\"" + name + "\"," in open(filename).read():
+      print("Already exists")
+      return
+    #appending data to Characters 
+    temp.append(y)
+    with open(filename,'w') as f: 
+      json.dump(data, f, indent=4) 
+
+#Function to modify the rating of a given JSON object
+def rate(origin, name, cat, v):
+  filename = get_fname(cat, origin)
+  with open(filename) as json_file: 
+    data = json.load(json_file) 
+    temp = data[cat]
+    if "\"name\":\"" + name + "\"," not in open(filename).read():
+      print("Object Does not exist")
+    for x in temp:
+      if x['name'] == name:
+        x['rating'] += v
+        print(x['rating'])
+        with open(filename,'w') as f: 
+          json.dump(data, f, indent=4)
+
+#Add Pack to Selection
+def add_pack(origin, cat):
+  filename = get_fname(cat, origin)
+  if filename not in lib:
+    lib.append(filename)
+
+#Remove Pack from selection
+def rem_pack(origin, cat):
+  filename = get_fname(cat, origin)
+  if filename in lib:
+    lib.remove(filename)
+    
+#Import Seclected Packs
+def import_packs():
+  temp = ""
+  for filename in lib:
+    with open(filename) as json_file: 
       data = json.load(json_file) 
-      temp = data['Characters']
-      #Check to see if the character has already been added before
-      if name in open(filename).read():
-        print("Already exists")
-        return
-      #appending data to Characters 
-      temp.append(y)
-      with open(filename,'w') as f: 
-        json.dump(data, f, indent=4) 
+      temp += data['Characters']
+      temp += data['Powers']
+      temp += data['WinCons']
+      temp += data['Arenas']
+      return temp
 
-#Adds a new character to a pack.
-#If you do not own the pack, it should leave a notification for the pack's owner to either approve or deny it.
-def add_char(filename):
-  print("Input Character Name:\t")
-  name = input()
-  print("Input Character Origin:\t")
-  origin = input()
-  write_json(filename, origin, name)
 
-list_packs()
-add_char("Data/Dragon Ball/Characters.JSON")
