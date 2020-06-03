@@ -1,5 +1,5 @@
 {
-	"Characters": [
+	"characters": [
 		{
 			"origin":"Bleach",
 			"name":"Ichigo Kurosaki",
@@ -372,5 +372,14 @@
 			"added by":"UncleUrdnot",
 			"rating": 0
 		}
-	]
+	],
+  "powers":[
+
+  ],
+  "winConds":[
+
+  ],
+  "arenas": [
+    
+  ]
 }
