@@ -1,62 +1,18 @@
 import os
-import login
 import json
+import login
 import shutil
+import random
+import pack
 
 #Delete this later, Need to set up usernames
-Username = "uncleurdnot"
+Username = login.Username
 lib = []
-
-#Grab packs from /Data
-#Packs should include a Characters.JSON & a Powers.JSON
-def list_packs():
-  l = []
-  for root, dirs, files in os.walk("./Data"):
-    for name in files:
-      if name != "users.JSON":
-        l.append(name)
-  return l
  
-def get_fname(origin):
-  filename = "Data/"+ origin.lower() + ".JSON"
-  return filename
-
-#Creates a new pack
-def creat_pack(origin):
-  source = "./Data/sys/template.JSON"
-  filename = get_fname(origin)
-  if os.path.exists(filename):
-    print("Already exists")
-    return
-  shutil.copyfile(source, filename)
-
-
-# Adds a new object to a pack.
-def write_json(origin, name, cat): 
-  name = name.lower()
-  origin = origin.lower()
-  filename = get_fname(cat, origin)
-  # python object to be appended 
-  y = {"origin": origin, 
-      "name": name, 
-      "added by": Username,
-      "rating": 0
-      } 
-  with open(filename) as json_file: 
-    data = json.load(json_file)
-    temp = data[cat]
-    #Check to see if the Object has already been added before
-    if "\"name\":\"" + name + "\"," in open(filename).read():
-      print("Already exists")
-      return
-    #appending data to Characters 
-    temp.append(y)
-    with open(filename,'w') as f: 
-      json.dump(data, f, indent=4) 
 
 #Function to modify the rating of a given JSON object
 def rate(origin, name, cat, v):
-  filename = get_fname(cat, origin)
+  filename = pack.pack.get_fname(cat, origin)
   with open(filename) as json_file: 
     data = json.load(json_file) 
     temp = data[cat]
@@ -71,7 +27,7 @@ def rate(origin, name, cat, v):
 
 #Add Pack to Selection
 def add_pack(origin, ec):
-  filename = get_fname(origin)
+  filename = pack.get_fname(origin)
   #If the desired pack is not already in lib, add it
   if filename not in lib:
     lib.append(filename)
@@ -82,7 +38,7 @@ def add_pack(origin, ec):
 
 #Remove Pack from selection
 def rem_pack(origin, ec):
-  filename = get_fname(origin)
+  filename = pack.get_fname(origin)
   if filename in lib:
     lib.remove(lib.index(filename)+1)
     lib.remove(filename)
@@ -141,26 +97,32 @@ def select_packs():
       ec = '{:04b}'.format(ec)
       rem_pack(o,ec)
     elif choice == "show":
-      print(list_packs())
+      print(pack.list_packs())
     elif choice == "finish":
       break
     else:
       print("Invalid Entry")
   return import_packs()
 
-while True:
-  print("Menu:\n\t1:\tPlay\n\t2:\tCreate Pack\n\t3:\tSearch Pack\n\t4:\tExit")
-  ch = input().lower()
-  if ch == "play" or ch == "1":
-    deck = select_packs()
-  elif ch == "create pack" or ch == "create" or ch == "2":
-    print("Input pack name:")
-    o = input()
-    creat_pack(o)
-    continue
-  elif ch == "search pack" or ch == "search" or ch == "3":
-    continue
-  elif ch == "Exit" or ch == "4":
-    break
-  else:
-    print("Invalid Input")
+def mainmenu():
+  while True:
+    print("Menu:\n\t1:\tPlay\n\t2:\tCreate Pack\n\t3:\tSearch Pack\n\t4:\tSettings\n\t5:\tExit")
+    ch = input().lower()
+    if ch == "play" or ch == "1":
+      deck = select_packs()
+    elif ch == "create pack" or ch == "create" or ch == "2":
+      print("Input pack name:")
+      o = input()
+      pack.creat_pack(o)
+      continue
+    elif ch == "search pack" or ch == "search" or ch == "3":
+      continue
+    elif ch == "settings" or ch == "4":
+      break
+    elif ch == "exit" or ch == "5":
+      break
+    else:
+      print("Invalid Input")
+
+if login.login():
+  mainmenu()
